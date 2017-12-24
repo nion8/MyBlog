@@ -26,6 +26,9 @@
                         <h1>Привет {{ name }}</h1>
                     Оставляйте Ваш имейл в форме ниже</h1>
                     <div>
+                        {{ form.as_p }}
+                    </div>
+                    <div>
                         <form action="" method="post" class="form-inline text-center">{% csrf_token %}
                          <div class="form-group">
                              <label>Ваш имейл: </label>

@@ -6,5 +6,5 @@ from .forms import SubscriberForm
 def blog(request):
     name = "Андрей"
     current_day = "23.12.2017"
-    from = SubscriberForm(request.POST or None)
+    form = SubscriberForm(request.POST or None)
     return render(request, 'blog/blog.html', locals())
