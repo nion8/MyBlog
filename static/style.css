@@ -18,8 +18,8 @@ html, body{
 }
 
 .general-container form label{
-    font-weight: 100;
-    color: white;
+    font-weight: 400;
+    color: #071cff;
 }
 
 .btn-orange{
@@ -34,8 +34,8 @@ html, body{
 
 .title{
     text-align: center;
-    color: #95ff7b;
-    font-weight: 100;
+    color: #071cff;
+    font-weight: 300;
     line-height: 50px;
 }
 
