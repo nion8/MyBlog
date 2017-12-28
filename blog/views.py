@@ -3,6 +3,10 @@ from django.http import HttpResponse
 from .forms import SubscriberForm
 
 
+def index(request):
+    return HttpResponse("Hello, World!")
+
+
 def blog(request):
     name = "Андрей"
     current_day = "23.12.2017"
@@ -17,7 +21,3 @@ def blog(request):
         new_form = form.save()
 
     return render(request, 'blog/blog.html', locals())
-
-
-def index(request):
-    return HttpResponse("Hello, World!")
