@@ -3,8 +3,8 @@ from django.http import HttpResponse
 from .forms import SubscriberForm
 
 
-def index(request):
-    return HttpResponse("Hello, World!")
+def home(request):
+    return render(request, 'home.html', {})
 
 
 def blog(request):
