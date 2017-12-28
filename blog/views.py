@@ -17,3 +17,7 @@ def blog(request):
         new_form = form.save()
 
     return render(request, 'blog/blog.html', locals())
+
+
+def index(request):
+    return HttpResponse("Hello, World!")
