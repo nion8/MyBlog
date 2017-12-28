@@ -13,7 +13,6 @@ urlpatterns = [
     url(r'^blog/', views.blog, name='blog'),
 ]"""
 from django.urls import path
-
 from . import views
 
 urlpatterns = [
