@@ -9,7 +9,7 @@ def home(request):
 
 def blog(request):
     name = "Андрей"
-    current_day = "23.12.2017"
+    current_day = "24.12.2017"
     form = SubscriberForm(request.POST or None)
 
     if request.method == "POST" and form.is_valid():
