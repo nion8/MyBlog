@@ -17,7 +17,7 @@ from . import views
 from blog import views
 
 urlpatterns = [
-#    path('', views.home, name='home'),
-    path('', views.blog, name='blog'),
+    path('', views.home, name='home'),
+#     path('', views.blog, name='blog'),
 
 ]
