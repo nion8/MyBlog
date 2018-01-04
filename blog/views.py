@@ -12,5 +12,4 @@ class Index(View):
 
     def get(self, request):
         context = {'text': 'Hello World!'}
-        print(context)
         return render(request, 'home.html', context)
