@@ -11,5 +11,5 @@ from django.views import View
 class Index(View):
 
     def get(self, request):
-        context = {'text': 'Hello World!'}
+        context = {'text': 'Привет Мир!'}
         return render(request, 'home.html', context)

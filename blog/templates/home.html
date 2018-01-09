@@ -1,12 +1,241 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding-top: 5rem;
+        }
+
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+    </style>
 </head>
+
+
 <body>
-<h1>Интернет Магазин Вестник</h1>
-<h2>{{text}}</h2>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!-- /end nav bar -->
+
+<div class="container">
+    <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a
+            mostly barebones HTML document.</p>
+    </div>
+</div>
+<!-- /.container -->
+
+<!-- Content here -->
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1>{{ text }}</h1>
+            <p> В данном примере с помощью наших предустановленных классов сеток были созданы 3 колонки равной ширины
+                для маленьких, средних и больших девайсов. Эти колонки выровнены с помощью родительского класса
+                .container.
+
+                Вот небольшое объяснение работы Bootstrap 4:
+
+                Инструмент для центровки контента сайта. Используйте класс .container для фиксированной ширины или
+                .container-fluid для 100%-ной ширины.
+                Ряды – это обертка для колонок. Каждая колонка имеет горизонтальный padding (называемый gutter) для
+                контроля пространства между колонками. Этот padding (паддинг) влияет на ряды с отрицательным марджином.
+                В этом случае все содержимое ваших колонок будет визуально </p>
+        </div>
+        <aside class="col-sm-3 ml-sm-auto blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <h4>About</h4>
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
+                    fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
+            <div class="sidebar-module">
+                <h4>Archives</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">March 2014</a></li>
+                    <li><a href="#">February 2014</a></li>
+                    <li><a href="#">January 2014</a></li>
+                    <li><a href="#">December 2013</a></li>
+                    <li><a href="#">November 2013</a></li>
+                    <li><a href="#">October 2013</a></li>
+                    <li><a href="#">September 2013</a></li>
+                    <li><a href="#">August 2013</a></li>
+                    <li><a href="#">July 2013</a></li>
+                    <li><a href="#">June 2013</a></li>
+                    <li><a href="#">May 2013</a></li>
+                    <li><a href="#">April 2013</a></li>
+                </ol>
+            </div>
+            <div class="sidebar-module">
+                <h4>Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </aside><!-- /.blog-sidebar -->
+    </div>
+</main>
+<!-- /.page-section -->
+<div class="page-section section-blue section-center">
+    <div class="container">
+        <h2 class="section-title">Get started in the SSD Cloud!</h2>
+
+        <form method="post" action="/register/" class="register-form">
+            <input type="hidden" name="action"
+                   value="djJ8M3l1c0xhWGJVS0pRRVNER0oyZzRrLTcxUl9CRTFLX3l8Ozf0HK1tZSX0iAq0jPPFcK7SHVMh3E4z5Q5Do6T7fZZp8a2iVg"/>
+            <input style="display: none;" name="email" value="" autocomplete="off">
+
+            <div class="register-container">
+                <div class="form-group">
+                    <input name="9d9f36261bb4a2e48e8c184b18d7865c" class="form-control input-lg" type="text"
+                           placeholder="Email Address" required/>
+                </div>
+                <div class="form-group">
+                    <input name="password" class="form-control input-lg" type="password" placeholder="Password"
+                           required/>
+                </div>
+                <button class="btn btn-primary-light btn-lg" type="submit">Create Account</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+<!-- /.page-section -->
+
+
+<footer class="blog-footer">
+    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
+    </p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</footer>
+<div class="page-footer">
+    <footer class="footer-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <h4>Pricing</h4>
+                    <ul>
+                        <li><a href="/pricing/">Vultr Cloud Compute (VC2)</a></li>
+                        <li><a href="/pricing/baremetal/">Bare Metal</a></li>
+                        <li><a href="/pricing/blockstorage/">Block Storage</a></li>
+                        <li><a href="/pricing/dedicatedcloud/">Dedicated Instances</a></li>
+                        <li><a href="/ddos/">DDoS Protection</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="/features/">Vultr Cloud Compute (VC2)</a></li>
+                        <li><a href="/features/baremetal/">Bare Metal</a></li>
+                        <li><a href="/features/blockstorage/">Block Storage</a></li>
+                        <li><a href="/features/dedicatedcloud/">Dedicated Cloud</a></li>
+                        <li><a href="/locations/">Datacenter Locations</a></li>
+                        <li><a href="/features/controlpanel/">Control Panel</a></li>
+                        <li><a href="/operating-systems/">Operating Systems</a></li>
+                        <li><a href="/features/uploadiso/">Upload ISO</a></li>
+                        <li><a href="/apps/">One-Click Apps</a></li>
+                        <li><a href="/features/bgp/">Bring Your IP Space</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="/faq/">FAQ</a></li>
+                        <li><a href="/api/">API</a></li>
+                        <li><a href="/docs/">Vultr Docs</a></li>
+                        <li><a href="/benchmarks/">Benchmarks</a></li>
+                        <li><a href="/status/">Server Status</a></li>
+                        <li><a href="/bug-bounty/">Bug Bounty</a></li>
+                        <li><a href="/coupons/">Coupons</a></li>
+                        <li><a href="/tools/">Toolbox</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about/">About Us</a></li>
+                        <li><a href="/about/team/">Our Team</a></li>
+                        <li><a href="/news/">News</a></li>
+                        <li><a href="/affiliate/">Logos &amp; Banners</a></li>
+                        <li><a href="/corporate/careers/">Careers</a></li>
+                        <li><a href="/sla/">SLA</a></li>
+                        <li><a href="/legal/tos/">Legal</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+
 
 </body>
 </html>
