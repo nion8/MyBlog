@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from .forms import SubscriberForm
 from django.views import View
 
+
 #
 # def home(request):
 #     return render(request, 'home.html', {})
