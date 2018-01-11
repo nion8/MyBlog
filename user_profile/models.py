@@ -10,10 +10,10 @@ class User(AbstractBaseUser):
     joined = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
-    USERNAME_FIELD = 'username '
+    USERNAME_FIELD = 'username'
 
     def __str__(self):
         return self.username
     #
-    # def __unicode__(self):
-    #     return self.username
+    #  def __unicode__(self):
+    #      return self.username
