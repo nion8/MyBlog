@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from .forms import SubscriberForm
+# from django.http import HttpResponse
+# from .forms import SubscriberForm
 from django.views import View
 
 

@@ -3,7 +3,7 @@ from .models import *
 
 
 
-class SubscriberForm(forms.ModelForm):
+class PostForm(forms.ModelForm):
     class Meta:
-        model = Subscriber
+        model = Post
         exclude = [""]
