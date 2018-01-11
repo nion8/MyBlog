@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from blog.views import Index
+from blog.views import Index, Profile
+# from user_profile.views import User
 
 admin.autodiscover()
 
@@ -24,5 +25,6 @@ urlpatterns = [
     # path('blog/', include('blog.urls')),
     # path('', include('blog.urls')),
     path('', Index.as_view(), name='index'),
+    path('user/(\w+)/$', Profile.as_view()),
 
 ]
