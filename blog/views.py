@@ -21,10 +21,10 @@ class Index(View):
 class Profile(View):
     # user profile Page /user/username
     def get(self, request, username):
-        user = User.objects.get(username=username)
-        posts = Post.objects.filter(user=user)
-        context = {
-            'posts': posts,
-            'user': user,
-        }
-        return render(request, 'profile.html', context)
+        # user = User.objects.get(username=username)
+        # posts = Post.objects.filter(user=user)
+        # context = {
+        #     'posts': posts,
+        #     'user': user,
+        # }
+        return render(request, 'profile.html')
