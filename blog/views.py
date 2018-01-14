@@ -18,10 +18,11 @@ class Index(View):
         return render(request, 'home.html', context)
 
 
-class Profile(View):
+def Profile(request):
+    return render(request, 'profile.html')
     # user profile Page /user/username
-    def get(self, request):
-        context = {'text': 'Профаел!'}
+    # def get(self, request):
+        # context = {'text': 'Профаел!'}
         # def get(self, request, username):
         # user = User.objects.get(username=username)
         # posts = Post.objects.filter(user=user)
@@ -29,4 +30,3 @@ class Profile(View):
         #     'posts': posts,
         #     'user': user,
         # }
-        return render(request, 'profile.html', context)

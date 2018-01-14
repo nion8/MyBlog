@@ -21,5 +21,5 @@ urlpatterns = [
     # path('', views.index, name='index'),
     #     path('', views.blog, name='blog'),
     # path('', Profile.as_view()),
-    re_path(r'^blog/', views.Profile, name='profile'),
+    path('', views.Profile, name='profile'),
 ]
