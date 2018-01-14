@@ -12,12 +12,14 @@ from blog import views
 urlpatterns = [
     url(r'^blog/', views.blog, name='blog'),
 ]"""
-from django.urls import path
+from django.urls import path, re_path
 from . import views
 from blog import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    # path('', views.Index, name='index'),
+    # path('', views.index, name='index'),
     #     path('', views.blog, name='blog'),
-
+    # path('', Profile.as_view()),
+    re_path(r'^blog/', views.Profile, name='profile'),
 ]

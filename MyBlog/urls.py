@@ -23,12 +23,13 @@ admin.autodiscover()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('blog/', include('blog.urls')),
+    path('blog/', include('blog.urls')),
     # path('', include('blog.urls')),
     path('', Index.as_view(), name='index'),
     # path('', Profile.as_view(), name='user'),
     # path('user/(\w+)/$', Profile.as_view()),
     # path(r'user/(\w+)/$', Profile.as_view(), name='profile'),
-    re_path(r'^user/(\w+)/$',  Profile.as_view()),
+    # re_path(r'^user/(\w+)/$',  Profile.as_view()),
+    # path('', Profile.as_view(), name='profile'),
 
 ]
