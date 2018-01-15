@@ -19,10 +19,10 @@ from blog import views
 
 urlpatterns = [
     # path('', views.Index, name='index'),
-    path('', Index.as_view(), name='index'),
+    # path('', Index.as_view(), name='index'),
     # path('', views.index, name='index'),
     #     path('', views.blog, name='blog'),
     # path('', Profile.as_view()),
     # re_path(r'^user/(\w+)/$', views.Profile, name='profile'),
-    path('blog/', Profile.as_view(), name='profile')
+    path('', Profile.as_view(), name='profile')
 ]
