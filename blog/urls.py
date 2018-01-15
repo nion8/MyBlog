@@ -13,13 +13,16 @@ urlpatterns = [
     url(r'^blog/', views.blog, name='blog'),
 ]"""
 from django.urls import path, re_path
-from . import views
+from blog.views import Index, Profile
+# from . import views
 from blog import views
 
 urlpatterns = [
     # path('', views.Index, name='index'),
+    path('', Index.as_view(), name='index'),
     # path('', views.index, name='index'),
     #     path('', views.blog, name='blog'),
     # path('', Profile.as_view()),
-    path('', views.Profile, name='profile'),
+    # re_path(r'^user/(\w+)/$', views.Profile, name='profile'),
+    path('blog/', Profile.as_view(), name='profile')
 ]

@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path, include
 from blog.views import Index, Profile
+# from blog.views import User
 
 # from user_profile.views import User
 
@@ -28,7 +29,7 @@ urlpatterns = [
     path('', Index.as_view(), name='index'),
     # path('', Profile.as_view(), name='user'),
     # path('user/(\w+)/$', Profile.as_view()),
-    # path(r'user/(\w+)/$', Profile.as_view(), name='profile'),
+    # re_path(r'^user/(\w+)/$', Profile.as_view()),
     # re_path(r'^user/(\w+)/$',  Profile.as_view()),
     # path('', Profile.as_view(), name='profile'),
 

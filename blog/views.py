@@ -1,6 +1,5 @@
 from django.shortcuts import render
 # from django.http import HttpResponse
-# from .forms import SubscriberForm
 from django.views import View
 from .models import Post
 from user_profile.models import User
@@ -18,15 +17,16 @@ class Index(View):
         return render(request, 'home.html', context)
 
 
-def Profile(request):
-    return render(request, 'profile.html')
-    # user profile Page /user/username
-    # def get(self, request):
-        # context = {'text': 'Профаел!'}
-        # def get(self, request, username):
+class Profile(View):
+
+     # user profile Page /user/username
+
+    def get(self, request):
+
         # user = User.objects.get(username=username)
         # posts = Post.objects.filter(user=user)
         # context = {
-        #     'posts': posts,
-        #     'user': user,
-        # }
+        #   'posts': posts,
+        #   'user': user,
+        #    }
+        return render(request, 'profile.html')
