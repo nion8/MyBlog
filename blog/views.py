@@ -13,7 +13,7 @@ from user_profile.models import User
 class Index(View):
 
     def get(self, request):
-        context = {'text': 'Привет Мир!'}
+        context = {'text': 'Привет Мир!!'}
         return render(request, 'home.html', context)
 
 
